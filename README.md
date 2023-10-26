@@ -22,4 +22,10 @@ __Test #4:__ "It will return the number with every other digit doubled"
 __Code:__
 let textInput = "1234123412341234"
 cardValid(textInput)
-__Expected Output:__ "1438143814381438."
+__Expected Output:__ "143143814381438."
+
+__Test #5:__ "It will return the sum of both digits if the number is >= 10."
+__Code:__
+let textInput = "1234567890123456"
+cardValid(textInput)
+__Expected Output:__ "1438537790143853"

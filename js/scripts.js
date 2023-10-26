@@ -8,14 +8,20 @@ function cardValid(textInput) {
       const doubledNum = numArray.map((digit, index) => {
         digit = parseInt(digit);
         if (index % 2 != 0) {
-          return digit * 2
+            digit *= 2;
+            if (digit >= 10) {
+                let digitArray = String(digit).split('');
+                return (parseInt(digitArray[0]) + parseInt(digitArray[1]))
+            } else {
+                return digit
+            }
         } else {
           return digit
         }
       })
       console.log(doubledNum)
       const newCreditNum = doubledNum.join("")
-      return newCreditNum
+      return parseInt(newCreditNum)
     } else {
       return "Please enter a valid credit card number.";
     }
