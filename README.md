@@ -61,3 +61,9 @@ __Code:__
 let textInput = "67020808604356"
 cardCompany(textInput)
 __Expected Output:__ "Discover"
+
+__Test #5:__ "It will include the length of their credit card if its valid."
+__Code:__
+let textInput = "340208086043562"
+cardValid(textInput)
+__Expected Output:__ American Express: 15
