@@ -5,3 +5,9 @@ __Code:__
 let textInput = ""
 cardValid(textInput)
 __Expected Output:__ "Please enter a valid credit card number."
+
+__Test #2:__ "It will return a statement if the input isn't atleast 15 characters."
+__Code:__
+let textInput = "12341234"
+cardValid(textInput)
+__Expected Output:__ "Please enter a valid credit card number."
