@@ -19,7 +19,15 @@ function cardValid(textInput) {
           return digit
         }
       })
-      console.log(doubledNum)
+      let sum = 0
+      doubledNum.forEach((num) => {
+        sum += num
+      })
+
+      if (sum % 10 != 0) {
+        return "This credit card is not valid"
+      }
+      
       const newCreditNum = doubledNum.join("")
       return parseInt(newCreditNum)
     } else {

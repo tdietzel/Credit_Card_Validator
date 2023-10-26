@@ -29,3 +29,9 @@ __Code:__
 let textInput = "1234567890123456"
 cardValid(textInput)
 __Expected Output:__ "1438537790143853"
+
+__Test #5:__ "It will return not valid if the sum of all digits does not end in a zero"
+__Code:__
+let textInput = "1234567890123456"
+cardValid(textInput)
+__Expected Output:__ "This credit card is not valid"
