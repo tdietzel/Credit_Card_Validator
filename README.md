@@ -35,3 +35,11 @@ __Code:__
 let textInput = "1234567890123456"
 cardValid(textInput)
 __Expected Output:__ "This credit card is not valid"
+
+# Describe cardCompany()
+
+__Test #1:__ "It will return American Express if the card begins with 34 or 37."
+__Code:__
+let textInput = "37020808604356"
+cardCompany(textInput)
+__Expected Output:__ "American Express"

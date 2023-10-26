@@ -2,6 +2,7 @@ function cardValid(textInput) {
   if (!textInput) {
     return "Please enter a valid credit card number.";
   } else {
+    cardCompany(textInput)
     let textArray = textInput.length;
     if (textArray >= 15 && textArray <= 16) {
       const numArray = textInput.split('')
@@ -27,11 +28,19 @@ function cardValid(textInput) {
       if (sum % 10 != 0) {
         return "This credit card is not valid"
       }
-      
-      const newCreditNum = doubledNum.join("")
-      return parseInt(newCreditNum)
+
+      return "This credit card is valid"
     } else {
       return "Please enter a valid credit card number.";
     }
   }
+}
+
+function cardCompany (textInput) {
+    let numCompany = textInput.slice(0,2)
+    numCompany = parseInt(numCompany)
+    if (numCompany === 34 || numCompany === 37) {
+        return console.log("American Express")
+    }
+    return console.log("Not an accredited CC")
 }
