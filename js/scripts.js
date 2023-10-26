@@ -3,7 +3,7 @@ function cardValid(textInput) {
         return "Please enter a valid credit card number.";
     } else {
         let textArray = textInput.length;
-        if (textArray >= 15) {
+        if (textArray >= 15 && textArray <= 16) {
             
         } else {
             return "Please enter a valid credit card number.";
