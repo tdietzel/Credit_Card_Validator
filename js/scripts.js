@@ -1,6 +1,19 @@
+// UI Logic
+window.addEventListener("load", () => {
+    const form = document.querySelector("#creditCardForm")
+    form.addEventListener("submit", displayResults)
+});
+
+function displayResults(e) {
+    e.preventDefault()
+    let textInput = document.getElementById("creditCard").value
+    document.getElementById("validate").innerText = cardValid(textInput);
+}
+
+// Business Logic
 function cardValid(textInput) {
   if (!textInput) {
-    return "Please enter a valid credit card number.";
+    return "Please enter a valid credit card number."
   } else {
     let textArray = textInput.length;
     cardCompany(textInput, textArray)
