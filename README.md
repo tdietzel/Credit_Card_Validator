@@ -17,3 +17,9 @@ __Code:__
 let textInput = "12341234123412341"
 cardValid(textInput)
 __Expected Output:__ "Please enter a valid credit card number."
+
+__Test #4:__ "It will return the number with every other digit doubled"
+__Code:__
+let textInput = "1234123412341234"
+cardValid(textInput)
+__Expected Output:__ "1438143814381438."
