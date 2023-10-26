@@ -37,10 +37,16 @@ function cardValid(textInput) {
 }
 
 function cardCompany (textInput) {
-    let numCompany = textInput.slice(0,2)
-    numCompany = parseInt(numCompany)
+    let numCompany = parseInt(textInput.slice(0,2))
+    let firstNum = parseInt(textInput.slice(0,1))
     if (numCompany === 34 || numCompany === 37) {
         return console.log("American Express")
+    } else if (firstNum === 4) {
+      return console.log("Visa")
+    } else if (firstNum === 5) {
+      return console.log("Mastercard")
+    } else if (firstNum === 6) {
+      return console.log("Discover")
     }
     return console.log("Not an accredited CC")
 }

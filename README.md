@@ -43,3 +43,21 @@ __Code:__
 let textInput = "37020808604356"
 cardCompany(textInput)
 __Expected Output:__ "American Express"
+
+__Test #2:__ "It will return Visa if the card begins with 4."
+__Code:__
+let textInput = "47020808604356"
+cardCompany(textInput)
+__Expected Output:__ "Visa"
+
+__Test #3:__ "It will return Mastercard if the card begins with 5."
+__Code:__
+let textInput = "57020808604356"
+cardCompany(textInput)
+__Expected Output:__ "Mastercard"
+
+__Test #4:__ "It will return Discover if the card begins with 6."
+__Code:__
+let textInput = "67020808604356"
+cardCompany(textInput)
+__Expected Output:__ "Discover"
